@@ -1,0 +1,60 @@
+bir elementi sonlandırmak için / kullanılır örnek <p></p>
+<img> </img> ile bitmez!!!!
+
+Paragraf Başlatma;
+<p> satır başlangıçı </p> satır sonu
+
+Kalın Yazı Yazma;
+<strong> </strong> başluk arasına yazılan kelimeyi kalın yazar örnek <strong>sa</strong>
+
+Fotoğraf Ekleme;
+<img src="fotoğraf konumu" alt="fotoğraf görünmezse diye buraya fotoğraf ile alakalı bir yazın"> örnek  <img src="img/KAPAK.jpg" alt="site kapağı">
+
+Karakter İşlevleri;
+
+<!DOCTYPE html>- doctype. Gerekli bir önsözdür. Zamanın sisinde, HTML henüz gençken (1991/92 civarında), belge türlerinin iyi HTML olarak kabul edilmesi için HTML sayfasının izlemesi gereken bir dizi kurala bağlantı görevi görmesi gerekiyordu, bu da otomatik hata denetimi ve diğer kullanışlı şeyler. Ancak bu günlerde, pek bir şey yapmıyorlar ve temelde yalnızca belgenizin doğru davrandığından emin olmak için gerekli. Şimdilik bilmeniz gereken tek şey bu.
+<html></html>- <html>eleman. Bu öğe, sayfanın tamamındaki tüm içeriği sarar ve bazen kök öğe olarak bilinir.
+<head></head>- <head>eleman. Bu öğe , sayfanızın görüntüleyenlerine gösterdiğiniz içerik olmayan , HTML sayfasına eklemek istediğiniz her şey için bir kap görevi görür . Bu, anahtar kelimeler ve arama sonuçlarında görünmesini istediğiniz bir sayfa açıklaması, içeriğimizi biçimlendirmek için CSS, karakter seti bildirimleri ve daha fazlasını içerir.
+<meta charset="utf-8">- Bu öğe, belgenizin kullanması gereken karakter kümesini, yazı dillerinin büyük çoğunluğundan çoğu karakteri içeren UTF-8'e ayarlar. Esasen, artık üzerine koyabileceğiniz herhangi bir metin içeriğini işleyebilir. Bunu ayarlamamak için hiçbir neden yoktur ve daha sonra bazı sorunların önlenmesine yardımcı olabilir.
+<title></title>-  <title> eleman. Bu, sayfanın yüklendiği tarayıcı sekmesinde görünen başlık olan sayfanızın başlığını belirler. Ayrıca, sayfayı yer imlerine eklediğinizde / favorilere eklediğinizde sayfayı tanımlamak için de kullanılır.
+<body></body>- <body>eleman. Bu, metin, resimler, videolar, oyunlar, oynatılabilir ses parçaları veya başka herhangi bir şey olsun, sayfanızı ziyaret ettiklerinde web kullanıcılarına göstermek istediğiniz tüm içeriği içerir .
+
+Satır Oluşturma;
+satır oluşturmak için <h1></1>
+
+listeler;
+sırasız listeler oluşturmak için <ul>
+sıralı listeler oluşturmak için <ol>
+UYARI! listelenen her öğe için <li> koymalısınız!!!
+
+ÖRNEK;
+<ul>
+<li>merhaba</li>
+</ul>
+
+Ek bilgi;
+<ul></ul> kullandığımızda yazdığımız yazıyı siyah nokta ile listeler
+<ol></ol> kullandığımızda yazdığımız sayıyı 1 2 3 diye listlere
+
+Yazılı Link Eklemek;
+Bir yazılı link oluşturmak için <a> kullanılır. ama daha bitmedi yazıyı ve linki belirtmek için href kullanmak gerekir. Örnek;
+<a href="link">Linki olcak yazı</a>
+örnek;
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Bu bilgiler Şurdan alınmıştır.</a>
+
+href = href ilk bakışta bir öznitelik adı için oldukça belirsiz bir seçim gibi görünebilir. Bunu hatırlamak sorun yaşıyorsanız, bunun açılımı unutmayın h ypertext ref uzakliginda .
+
+html de element kullanmak için şunu yapmalıyız;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <img src="images/firefox-icon.png" alt="My test image">
+  </body>
+</html>
+bu kısma elementleri koymalıyız.
+
+Not! html ve css de /* kullanmak yazıyı yok sayar örneğin <p>sa</p> /*paragraf komutu yazısında html /* den sonrasını görmez. 

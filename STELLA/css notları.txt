@@ -1,0 +1,50 @@
+css nedir?
+CSS (Basamaklı Stil Sayfaları), web içeriğini şekillendiren koddur. CSS ile ilgili temel bilgiler, başlamak için neye ihtiyacınız olduğunu açıklar. Şunun gibi soruları cevaplayacağız: Metni nasıl kırmızı yaparım? İçeriğin (web sayfası) düzeninde belirli bir konumda görüntülenmesini nasıl sağlayabilirim? Web sayfamı arka plan resimleri ve renkleriyle nasıl dekore ederim?
+HTML gibi CSS de bir programlama dili değildir. Bu da bir biçimlendirme dili değil. CSS bir stil sayfası dilidir. CSS, HTML öğelerini seçici bir şekilde biçimlendirmek için kullandığınız şeydir.
+
+Metin rengi değiştirme;
+metin rengi değiştirmek için şu kodu index.html (html dosyanızın adı herneyse artık) onun <head></head> kısmına yapıştırın.
+kod = <link href="styles/stil.css" rel="stylesheet"> (styles/stil.css kısmını kendi css dosyanıza göre değiştirin)
+css dosyamıza da şu kodu koyuyoruz
+p {
+color: red;
+}
+Not! kodu koyduğunuz yerin rengini değiştirirsiniz bütün yazının değil. bütün yaznın rengini değiştirmek için kodu <head></head> kısımlarına koyun!
+Uyarı! sadece paragraf rengini değiştirebilirsiniz!
+ 
+
+Not! html ve css de /* kullanmak yazıyı yok sayar örneğin <p>sa</p> /*paragraf komutu yazısında html /* den sonrasını görmez. 
+
+ Yazı tipi stili değiştirme;
+öncelikle kendine google https://fonts.google.com/ adresinden kendimize bir yazı tipi stlili seçiyoruz ve "selected family" kısmından gerekli bilgileri kopyalıyoruz
+sonra kopyaladığımız linki <link href="link" rel="stylesheet"> diye düzenliyip index.html dosyamıza gelip <head></head> kısmına yapıştırıyoruz.
+css dosyamıza dönelim ve 
+
+
+html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+  }
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+şu kodu yapıştıralım gerekli yerleri siz değiştirirsiniz.
+
+arka plan rengi değiştirme;
+şu kodu styles.css dosyanıza atın;
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+gerekli yerleri kendinize göre değiştirirsiniz.
